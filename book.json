@@ -1,0 +1,46 @@
+{
+    "hpub": 1,
+    "title": "Demo Issue",
+    "author": ["St. Paul's School"],
+    "creator": ["Alex Forey"],
+    "date": "2011-06-15",
+    "url": "book://bakerframework.com/books/arthurconandoyle-thestudyinscarlet",
+
+    "orientation": "both",
+    "zoomable": false,
+
+    "-baker-background": "#ffffff",
+    "-baker-vertical-bounce": true,
+    "-baker-media-autoplay": true,
+    "-baker-page-numbers-color": "#000000",
+
+    "contents": [
+        "covers/Issue Cover.html",
+
+        "school-life/Cover.html",
+        "school-life/text.html",
+        "school-life/banner.html",
+
+        "current-affairs/Cover.html",
+        "current-affairs/text.html",
+        "current-affairs/banner.html",
+
+        "politics-history/Cover.html",
+        "politics-history/text.html",
+        "politics-history/banner.html",
+
+        "culture/Cover.html",
+        "culture/text.html",
+        "culture/banner.html",
+
+        "columns/Cover.html",
+        "columns/text.html",
+        "columns/banner.html",
+
+        "sport/Cover.html",
+        "sport/text.html",
+        "sport/banner.html",
+
+        "covers/Tail.html"
+    ]
+}

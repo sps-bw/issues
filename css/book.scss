@@ -1,0 +1,251 @@
+/****************************************************************************************************
+ * Media Queries
+ */
+
+$phone: "only screen and (max-width : 700px)";
+
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: linear-gradient(to bottom, rgba($color, 1.0) 20px, rgba($color, $opacity) 66%);
+}
+
+/****************************************************************************************************
+ * General
+ */
+
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+  background: #ffffff url(../gfx/background.jpg);
+  font-family: 'freight-text-pro', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #b50303;
+}
+
+#page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/****************************************************************************************************
+ * Typography
+ */
+
+@import url(../css/fonts.css);
+
+h1 {
+  font-family: 'volkorn', serif;
+  font-style: italic;
+  letter-spacing: -3px;
+  font-size: 80px;
+
+  @media #{$phone} {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+}
+
+/****************************************************************************************************
+ * Section Colours
+ */
+
+$school-life: #542C4A;
+$current-affairs: #0A9E64;
+$politics-history: #132D78;
+$culture: #0E6EB2;
+$columns: #000;
+$sport: #941E46;
+
+
+/****************************************************************************************************
+ * Covers
+ */
+
+
+
+.cover {
+
+  $cover-opacity: 0.9;
+
+  &.school-life        { @include background-opacity($school-life, $cover-opacity); }
+  &.current-affairs    { @include background-opacity($current-affairs, $cover-opacity); }
+  &.politics-history   { @include background-opacity($politics-history, $cover-opacity); }
+  &.culture            { @include background-opacity($culture, $cover-opacity); }
+  &.columns            { @include background-opacity($columns, $cover-opacity); }
+  &.sport              { @include background-opacity($sport, $cover-opacity); }
+
+  .cover-box {
+    color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    left: 40px;
+    bottom: 20%;
+  }
+
+  p {
+    font-size: 24px;
+    font-family: 'jaf-bernino-sans';
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    font-weight: 300;
+
+    @media #{$phone} {
+      font-size: 16px;
+    }
+  }
+}
+
+.cover-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+}
+
+/****************************************************************************************************
+ * Articles
+ */
+
+.top-bar {
+
+  height: 20px;
+  width: 100%;
+
+  position: fixed;
+
+  &.school-life        { background: $school-life; }
+  &.current-affairs    { background: $current-affairs; }
+  &.politics-history   { background: $politics-history; }
+  &.culture            { background: $culture; }
+  &.columns            { background: $columns; }
+  &.sport              { background: $sport; }
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+
+  margin-top: 3em;
+  margin-bottom: 3em;
+
+  font-family: 'jaf-bernino-sans', sans-serif;
+
+  h1 {
+    font-family: 'jaf-bernino-sans', sans-serif;
+    font-style: normal;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: -0.04em;
+    margin-bottom: 0.2em;
+
+    @media #{$phone} {
+      font-size: 50px;
+    }
+  }
+
+  h2 {
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  padding-bottom: 5%;
+  border-bottom: 4px solid #eee;
+
+  &.banner {
+    width: 100%;
+    margin-top: 20px;
+    background-size: cover;
+    background-position: center center;
+
+    height: 50%;
+
+    .container {
+      position: absolute;
+
+      bottom: 53%;
+      left: 5%;
+    }
+
+    @media #{$phone} {
+      height: 100%;
+
+      .container {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+
+        h1 { line-height: 1.2; }
+      }
+    }
+  }
+
+  &.light {
+    h1, h2 {
+      color: white;
+    }
+  }
+}
+
+article {
+  text-align: justify;
+  text-indent: 72px;
+  font-size: 24px;
+  margin-bottom: 10%;
+  word-wrap: break-word;
+  letter-spacing: 0.01rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+
+  font-family: 'freight-text-pro', serif;
+
+  img {
+
+    width: 100%;
+    margin: 5% 0;
+
+    &.right, &.left {
+      width: 45%;
+      max-width: 400px;
+    }
+
+    &.left {
+      float: left;
+      margin-right: 5%;
+    }
+
+    &.right {
+      float: right;
+      margin-left: 5%;
+    }
+
+    @media #{$phone} {
+
+      &.left, &.right {
+        width: 100%;
+        max-width: none;
+        margin-left: none;
+        margin-right: none;
+        text-indent: none;
+      }
+    }
+
+  }
+
+  @media #{$phone} {
+    font-size: 20px;
+    line-height: 30px;
+    text-indent: 32px;
+    word-wrap: break-word;
+  }
+
+}
