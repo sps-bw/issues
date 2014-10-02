@@ -1,206 +1,61 @@
-/****************************************************************************************************
- * Media Queries
- */
-/****************************************************************************************************
- * General
- */
+/**************************************************************************************************** Media Queries */
+/**************************************************************************************************** General */
 @import url(../css/fonts.css);
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-body {
-  background: white url(../gfx/background.jpg);
-  font-family: 'freight-text-pro', sans-serif;
-  font-size: 16px;
-  margin: 0;
-  padding: 0; }
+body { background: white url(../gfx/background.jpg); font-family: 'freight-text-pro', sans-serif; font-size: 16px; margin: 0; padding: 0; }
 
-a {
-  color: #b50303; }
+a { color: #b50303; }
 
-#page {
-  width: 100%;
-  height: 100%;
-  position: absolute; }
+#page { width: 100%; height: 100%; position: absolute; }
 
-/****************************************************************************************************
- * Typography
- */
-h1 {
-  font-family: 'volkorn', serif;
-  font-style: italic;
-  letter-spacing: -3px;
-  font-size: 80px; }
-  @media only screen and (max-width: 700px) {
-    h1 {
-      font-size: 40px;
-      letter-spacing: -1px; } }
+/**************************************************************************************************** Typography */
+h1 { font-family: 'volkorn', serif; font-style: italic; letter-spacing: -3px; font-size: 80px; }
+@media only screen and (max-width: 700px) { h1 { font-size: 40px; letter-spacing: -1px; } }
 
-/****************************************************************************************************
- * Section Colours
- */
-/****************************************************************************************************
- * Covers
- */
-.cover.school-life {
-  background: #542c4a;
-  background: linear-gradient(to bottom, #542c4a 20px, rgba(84, 44, 74, 0.9) 66%); }
-.cover.current-affairs {
-  background: #0a9e64;
-  background: linear-gradient(to bottom, #0a9e64 20px, rgba(10, 158, 100, 0.9) 66%); }
-.cover.politics-history {
-  background: #132d78;
-  background: linear-gradient(to bottom, #132d78 20px, rgba(19, 45, 120, 0.9) 66%); }
-.cover.culture {
-  background: #0e6eb2;
-  background: linear-gradient(to bottom, #0e6eb2 20px, rgba(14, 110, 178, 0.9) 66%); }
-.cover.columns {
-  background: black;
-  background: linear-gradient(to bottom, black 20px, rgba(0, 0, 0, 0.9) 66%); }
-.cover.sport {
-  background: #941e46;
-  background: linear-gradient(to bottom, #941e46 20px, rgba(148, 30, 70, 0.9) 66%); }
-.cover .cover-box {
-  color: rgba(255, 255, 255, 0.9);
-  position: absolute;
-  left: 40px;
-  bottom: 20%; }
-.cover p {
-  font-size: 24px;
-  font-family: 'jaf-bernino-sans';
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  font-weight: 300; }
-  @media only screen and (max-width: 700px) {
-    .cover p {
-      font-size: 16px; } }
+/**************************************************************************************************** Section Colours */
+/**************************************************************************************************** Covers */
+.cover.school-life { background: #542c4a; background: linear-gradient(to bottom, #542c4a 20px, rgba(84, 44, 74, 0.9) 66%); }
+.cover.current-affairs { background: #0a9e64; background: linear-gradient(to bottom, #0a9e64 20px, rgba(10, 158, 100, 0.9) 66%); }
+.cover.politics-history { background: #132d78; background: linear-gradient(to bottom, #132d78 20px, rgba(19, 45, 120, 0.9) 66%); }
+.cover.culture { background: #0e6eb2; background: linear-gradient(to bottom, #0e6eb2 20px, rgba(14, 110, 178, 0.9) 66%); }
+.cover.columns { background: black; background: linear-gradient(to bottom, black 20px, rgba(0, 0, 0, 0.9) 66%); }
+.cover.sport { background: #941e46; background: linear-gradient(to bottom, #941e46 20px, rgba(148, 30, 70, 0.9) 66%); }
+.cover .cover-box { color: rgba(255, 255, 255, 0.9); position: absolute; left: 40px; bottom: 20%; }
+.cover p { font-size: 24px; font-family: 'jaf-bernino-sans'; line-height: 1.1; letter-spacing: -0.02em; font-weight: 300; }
+@media only screen and (max-width: 700px) { .cover p { font-size: 16px; } }
 
-.cover-background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-size: cover; }
+.cover-background { width: 100%; height: 100%; position: absolute; background-size: cover; }
 
-/****************************************************************************************************
- * Articles
- */
-.top-bar {
-  height: 20px;
-  width: 100%;
-  position: fixed; }
-  .top-bar.school-life {
-    background: #542c4a; }
-  .top-bar.current-affairs {
-    background: #0a9e64; }
-  .top-bar.politics-history {
-    background: #132d78; }
-  .top-bar.culture {
-    background: #0e6eb2; }
-  .top-bar.columns {
-    background: black; }
-  .top-bar.sport {
-    background: #941e46; }
+/**************************************************************************************************** Articles */
+.top-bar { height: 20px; width: 100%; position: fixed; }
+.top-bar.school-life { background: #542c4a; }
+.top-bar.current-affairs { background: #0a9e64; }
+.top-bar.politics-history { background: #132d78; }
+.top-bar.culture { background: #0e6eb2; }
+.top-bar.columns { background: black; }
+.top-bar.sport { background: #941e46; }
 
-.container {
-  width: 80%;
-  margin: 0 auto; }
+.container { width: 80%; margin: 0 auto; }
 
-header {
-  margin-top: 3em;
-  margin-bottom: 3em;
-  font-family: 'jaf-bernino-sans', sans-serif;
-  padding-bottom: 5%;
-  border-bottom: 4px solid #eee; }
-  header h1 {
-    font-family: 'jaf-bernino-sans', sans-serif;
-    font-style: normal;
-    line-height: 1;
-    font-weight: 700;
-    font-size: 60px;
-    letter-spacing: -0.04em;
-    margin-bottom: 0.2em; }
-    @media only screen and (max-width: 700px) {
-      header h1 {
-        font-size: 50px; } }
-  header h2 {
-    font-weight: 300;
-    font-style: italic; }
-  header.banner {
-    width: 100%;
-    margin-top: 20px;
-    background-size: cover;
-    background-position: center center;
-    height: 50%; }
-    header.banner .container {
-      position: absolute;
-      bottom: 53%;
-      left: 5%; }
-    @media only screen and (min-device-width: 768px) and (orientation: landscape) {
-      header.banner {
-        height: 100%;
-        width: 50%;
-        float: left;
-        margin-right: 40px;
-        margin-bottom: 20px;
-        border-bottom: none; }
-        header.banner .container {
-          position: absolute;
-          left: 50%;
-          width: auto;
-          top: 0;
-          margin-left: 40px;
-          margin-top: 140px; } }
-    @media only screen and (max-width: 700px) {
-      header.banner {
-        height: 100%; }
-        header.banner .container {
-          position: absolute;
-          bottom: 5%;
-          left: 5%; }
-          header.banner .container h1 {
-            line-height: 1.2; } }
-  header.light h1, header.light h2 {
-    color: white; }
+header { margin-top: 3em; margin-bottom: 3em; font-family: 'jaf-bernino-sans', sans-serif; padding-bottom: 5%; border-bottom: 4px solid #eee; }
+header h1 { font-family: 'jaf-bernino-sans', sans-serif; font-style: normal; line-height: 1; font-weight: 700; font-size: 60px; letter-spacing: -0.04em; margin-bottom: 0.2em; }
+@media only screen and (max-width: 700px) { header h1 { font-size: 50px; } }
+header h2 { font-weight: 300; font-style: italic; }
+header.banner { width: 100%; margin-top: 20px; background-size: cover; background-position: center center; height: 50%; }
+header.banner .container { position: absolute; bottom: 53%; left: 5%; }
+@media only screen and (min-device-width: 768px) and (orientation: landscape) { header.banner { height: 100%; width: 50%; float: left; margin-right: 40px; margin-bottom: 20px; border-bottom: none; }
+  header.banner .container { position: absolute; left: 50%; width: auto; top: 0; margin-left: 40px; margin-top: 140px; } }
+@media only screen and (max-width: 700px) { header.banner { height: 100%; }
+  header.banner .container { position: absolute; bottom: 5%; left: 5%; }
+  header.banner .container h1 { line-height: 1.2; } }
+header.light h1, header.light h2 { color: white; }
 
-article {
-  text-align: justify;
-  text-indent: 72px;
-  font-size: 24px;
-  padding-bottom: 10%;
-  word-wrap: break-word;
-  letter-spacing: 0.01rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-  font-family: 'freight-text-pro', serif; }
-  @media only screen and (min-device-width: 768px) and (orientation: landscape) {
-    article {
-      margin-top: 50%; } }
-  article img {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px; }
-    article img.right, article img.left {
-      width: 45%;
-      max-width: 400px; }
-    article img.left {
-      float: left;
-      margin-right: 5%; }
-    article img.right {
-      float: right;
-      margin-left: 5%; }
-    @media only screen and (max-width: 700px) {
-      article img.left, article img.right {
-        width: 100%;
-        max-width: none;
-        margin-left: none;
-        margin-right: none;
-        text-indent: none; } }
-  @media only screen and (max-width: 700px) {
-    article {
-      font-size: 20px;
-      line-height: 30px;
-      text-indent: 32px;
-      word-wrap: break-word; } }
+article { text-align: justify; text-indent: 72px; font-size: 24px; padding-bottom: 10%; word-wrap: break-word; letter-spacing: 0.01rem; font-weight: 400; font-style: normal; line-height: 1.5; font-family: 'freight-text-pro', serif; }
+@media only screen and (min-device-width: 768px) and (orientation: landscape) { article { margin-top: 65%; } }
+article img { width: 100%; margin-top: 20px; margin-bottom: 20px; }
+article img.right, article img.left { width: 45%; max-width: 400px; }
+article img.left { float: left; margin-right: 5%; }
+article img.right { float: right; margin-left: 5%; }
+@media only screen and (max-width: 700px) { article img.left, article img.right { width: 100%; max-width: none; margin-left: none; margin-right: none; text-indent: none; } }
+@media only screen and (max-width: 700px) { article { font-size: 20px; line-height: 30px; text-indent: 32px; word-wrap: break-word; } }
