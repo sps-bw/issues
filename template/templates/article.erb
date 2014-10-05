@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sport</title>
+  <meta name="viewport" content="initial-scale=1.0;"/>
+  <link rel="stylesheet" type="text/css" href="../css/book.css">
+
+</head>
+
+<body>
+
+  <div id="page" class="article">
+
+    <div class="top-bar <%= @section %>"></div>
+
+    <% if @banner_image %>
+      <img class="banner" src="../images/<%= @banner_image %>">
+    <% end %>
+
+    <div class="container">
+
+      <header>
+
+        <h1><%= @title %></h1>
+        <h2><%= @author %></h2>
+
+      </header>
+
+      <article>
+
+        <%= @article_text %>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</body>

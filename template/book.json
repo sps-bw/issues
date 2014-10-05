@@ -1,0 +1,13 @@
+{
+    "hpub": 1,
+    "author": ["St. Paul's School"],
+    "creator": ["Alex Forey"],
+
+    "orientation": "both",
+    "zoomable": false,
+
+    "-baker-background": "#ffffff",
+    "-baker-vertical-bounce": true,
+    "-baker-media-autoplay": true,
+    "-baker-page-numbers-color": "#000000"
+}
