@@ -1,9 +1,12 @@
+require 'rubygems'
+
 require 'metadown'
 require 'erb'
 require 'yaml'
 require 'json'
 require 'awesome_print'
 require 'sass'
+require 'zip'
 
 require_relative 'lib.rb'
 
@@ -16,7 +19,7 @@ def output_path(issue)
   "#{Dir.pwd}/#{issue}/Output/Unpackaged"
 end
 
-task default: %w[directories articles covers assets]
+task default: %w[directories articles covers assets book_json zip]
 
 task :directories do
 
@@ -121,6 +124,9 @@ task :covers do
 
   end
 
+  # Front and back covers
+
+
 end
 
 task :assets do
@@ -204,6 +210,7 @@ task :book_json do
   all_pages << "covers/back.html"
 
   issue_info['contents'] = all_pages
+  issue_info['url'] = "book://bw.alfo.im/issues/#{@issue}"
 
   path = output_path(@issue) + "/book.json"
 
@@ -213,5 +220,21 @@ task :book_json do
   puts "Written book.json to #{path}"
 
   ap issue_info
+
+end
+
+task :zip do
+
+  # Get the issue number from the command line
+  @issue = ENV['ISSUE']
+
+  # Return if it doesn't exist
+  fail("No issue") unless @issue
+
+  dir = "#{Dir.pwd}/#{@issue}/Output"
+
+  `cd #{Shellwords.escape(dir + "/Unpackaged")} && zip -r issue.zip *`
+
+  FileUtils.mv(dir + "/Unpackaged/issue.zip", dir + "/issue-#{@issue}.hpub")
 
 end
