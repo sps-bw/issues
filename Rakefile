@@ -69,7 +69,7 @@ task :articles do
     # Array of all the markdown files
     articles = Dir.glob("#{section_path}/*.md")
 
-    puts "    #{section}:".yellow
+    puts "    #{section}:".red
 
     # Loop over them
     articles.each do |article|
@@ -85,8 +85,6 @@ task :articles do
       @title = data.metadata['title']
       @banner_image = data.metadata['banner']
 
-      puts "      #{@title} by #{@author} (Banner: #{@banner_image})".red
-
       # Render the HTML
       renderer = ERB.new(File.read(@template_path + 'article.erb'))
       html = renderer.result
@@ -94,6 +92,8 @@ task :articles do
       # Write it to file
       html_name = "#{@section}-#{@title}.html"
       html_path = output_path(@issue) + '/articles/' + html_name
+
+      puts "      #{html_path}".yellow
 
       File.write(html_path, html)
 
@@ -128,6 +128,8 @@ task :covers do
     html = renderer.result
 
     html_path = "#{output_path(@issue)}/covers/#{@section}.html"
+
+    puts "    #{html_path}".yellow
 
     File.write(html_path, html)
 
