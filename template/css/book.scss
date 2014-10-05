@@ -6,8 +6,8 @@ $phone: "only screen and (max-width : 700px)";
 $ipad-landscape: "only screen and (min-device-width : 768px) and (orientation : landscape)";
 
 @mixin background-opacity($color, $opacity: 0.3) {
-    background: $color;
-    background: linear-gradient(to bottom, rgba($color, 1.0) 20px, rgba($color, $opacity) 66%);
+  background: $color;
+  background: linear-gradient(to bottom, rgba($color, 1.0) 20px, rgba($color, $opacity) 66%);
 }
 
 /****************************************************************************************************
@@ -229,7 +229,7 @@ article {
   font-family: 'freight-text-pro', serif;
 
   @media #{$ipad-landscape} {
-      margin-top: 65%;
+    margin-top: 65%;
   }
 
   img {
