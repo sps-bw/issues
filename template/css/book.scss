@@ -212,6 +212,12 @@ header {
     h1, h2 {
       color: white;
     }
+
+    @media #{$ipad-landscape} {
+      h1, h2 {
+        color: black;
+      }
+    }
   }
 }
 

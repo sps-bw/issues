@@ -7,7 +7,7 @@
     "zoomable": false,
 
     "-baker-background": "#ffffff",
-    "-baker-vertical-bounce": true,
+    "-baker-vertical-bounce": false,
     "-baker-media-autoplay": true,
     "-baker-page-numbers-color": "#000000"
 }

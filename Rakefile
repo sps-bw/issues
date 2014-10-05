@@ -20,7 +20,19 @@ def output_path(issue)
   "#{Dir.pwd}/#{issue}/Output/Unpackaged"
 end
 
-task default: %w[directories articles covers assets book_json zip]
+task default: %w[delete directories articles covers assets book_json zip]
+
+task :delete do
+
+  # Get the issue number from the command line
+  @issue = ENV['ISSUE']
+
+  # Return if it doesn't exist
+  fail("No issue") unless @issue
+
+  FileUtils.rm_rf("#{Dir.pwd}/#{@issue}/Output")
+
+end
 
 task :directories do
 
@@ -84,6 +96,7 @@ task :articles do
       @author = data.metadata['author']
       @title = data.metadata['title']
       @banner_image = data.metadata['banner']
+      @light = data.metadata['light']
 
       # Render the HTML
       renderer = ERB.new(File.read(@template_path + 'article.erb'))
