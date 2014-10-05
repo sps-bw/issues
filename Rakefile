@@ -4,16 +4,18 @@ require 'yaml'
 require 'json'
 require 'awesome_print'
 
+require_relative 'lib.rb'
+
 SECTIONS = ['school-life', 'current-affairs', 'culture', 'politics-history', 'columns', 'sport']
 
 # Get the template
-@template_path = "#{Dir.pwd}/template/templates/article.erb"
+@template_path = "#{Dir.pwd}/template/templates/"
 
 def output_path(issue)
   "#{Dir.pwd}/#{issue}/Output/Unpackaged"
 end
 
-task default: %w[directories articles]
+task default: %w[directories articles covers]
 
 task :directories do
 
@@ -26,9 +28,11 @@ task :directories do
   # Check to make sure the directory exists
   dir = "#{Dir.pwd}/#{@issue}"
 
-  @output_path = output_path(@issue) + '/articles'
+  @output_path = output_path(@issue)
 
   FileUtils.mkdir_p(@output_path)
+  FileUtils.mkdir_p(@output_path + '/articles')
+  FileUtils.mkdir_p(@output_path + '/covers')
 
 end
 
@@ -73,7 +77,7 @@ task :articles do
       puts "  #{@title} by #{@author} (Banner: #{@banner_image})"
 
       # Render the HTML
-      renderer = ERB.new(File.read(@template_path))
+      renderer = ERB.new(File.read(@template_path + 'article.erb'))
       html = renderer.result
 
       # Write it to file
@@ -83,6 +87,36 @@ task :articles do
       File.write(html_path, html)
 
     end
+
+  end
+
+end
+
+task :covers do
+
+  # Get the issue number from the command line
+  @issue = ENV['ISSUE']
+
+  # Return if it doesn't exist
+  fail("No issue") unless @issue
+
+  # Load the descriptions
+  descriptions = YAML.load(File.open("#{Dir.pwd}/template/sections.yml"))
+
+  SECTIONS.each do |section|
+
+    cover_template = @template_path + 'cover.erb'
+
+    @section = section
+    puts @section_title = descriptions[@section]['title']
+    puts @description = descriptions[@section]['description']
+
+    renderer = ERB.new(File.read(cover_template))
+    html = renderer.result
+
+    html_path = "#{output_path(@issue)}/covers/#{@section}.html"
+
+    File.write(html_path, html)
 
   end
 
