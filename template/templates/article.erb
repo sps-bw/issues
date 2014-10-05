@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sport</title>
+  <title><%= @title %></title>
   <meta name="viewport" content="initial-scale=1.0;"/>
   <link rel="stylesheet" type="text/css" href="../css/book.css">
 
@@ -30,7 +30,12 @@
 
     <div class="container">
 
-      <article>
+      <% if @banner_image %>
+        <article class="banner">
+      <% else %>
+        <article>
+      <% end %>
+
         <%= @article_text %>
       </article>
 

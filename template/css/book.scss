@@ -134,7 +134,7 @@ $sport: #941E46;
 
 header {
 
-  margin-top: 3em;
+  margin-top: 5%;
   margin-bottom: 3em;
 
   font-family: 'jaf-bernino-sans', sans-serif;
@@ -229,7 +229,9 @@ article {
   font-family: 'freight-text-pro', serif;
 
   @media #{$ipad-landscape} {
-    margin-top: 65%;
+    &.banner {
+      margin-top: 50%;
+    }
   }
 
   img {
