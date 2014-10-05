@@ -7,6 +7,7 @@ require 'json'
 require 'awesome_print'
 require 'sass'
 require 'zip'
+require 'colorize'
 
 require_relative 'lib.rb'
 
@@ -28,6 +29,10 @@ task :directories do
 
   # Return if it doesn't exist
   fail("No issue") unless @issue
+
+  puts "Processing Issue #{@issue}...".blue
+
+  puts "  Creating Directories...".green
 
   # Check to make sure the directory exists
   dir = "#{Dir.pwd}/#{@issue}"
@@ -53,6 +58,8 @@ task :articles do
 
   fail("No articles") unless Dir.exists?(dir + "/Articles")
 
+  puts "  Rendering Articles:".green
+
   # Loop over the sections
   SECTIONS.each do |section|
 
@@ -62,7 +69,7 @@ task :articles do
     # Array of all the markdown files
     articles = Dir.glob("#{section_path}/*.md")
 
-    puts "#{section}:"
+    puts "    #{section}:".yellow
 
     # Loop over them
     articles.each do |article|
@@ -78,7 +85,7 @@ task :articles do
       @title = data.metadata['title']
       @banner_image = data.metadata['banner']
 
-      puts "  #{@title} by #{@author} (Banner: #{@banner_image})"
+      puts "      #{@title} by #{@author} (Banner: #{@banner_image})".red
 
       # Render the HTML
       renderer = ERB.new(File.read(@template_path + 'article.erb'))
@@ -104,6 +111,8 @@ task :covers do
   # Return if it doesn't exist
   fail("No issue") unless @issue
 
+  puts "  Rendering covers...".green
+
   # Load the descriptions
   descriptions = YAML.load(File.open("#{Dir.pwd}/template/sections.yml"))
 
@@ -112,8 +121,8 @@ task :covers do
     cover_template = @template_path + 'cover.erb'
 
     @section = section
-    puts @section_title = descriptions[@section]['title']
-    puts @description = descriptions[@section]['description']
+    @section_title = descriptions[@section]['title']
+    @description = descriptions[@section]['description']
 
     renderer = ERB.new(File.read(cover_template))
     html = renderer.result
@@ -137,6 +146,8 @@ task :assets do
   # Return if it doesn't exist
   fail("No issue") unless @issue
 
+  puts "  Creating assets...".green
+
   # Do images first
   destination_path = output_path(@issue) + "/images"
 
@@ -155,7 +166,7 @@ task :assets do
 
   Dir.glob(original_path + "/*.scss").each do |scss|
 
-    puts scss
+    puts "    #{scss}".yellow
 
     output = Sass::Engine.new(File.read(scss), {syntax: :scss}).render
 
@@ -174,6 +185,8 @@ task :book_json do
 
   # Return if it doesn't exist
   fail("No issue") unless @issue
+
+  puts "  Generating book.json".green
 
   # Load the issue and default stuff
   issue_info = YAML.load(File.read("#{Dir.pwd}/#{@issue}/info.yml"))
@@ -217,10 +230,6 @@ task :book_json do
   # Write it to file
   File.write(path, issue_info.to_json)
 
-  puts "Written book.json to #{path}"
-
-  ap issue_info
-
 end
 
 task :zip do
@@ -230,6 +239,8 @@ task :zip do
 
   # Return if it doesn't exist
   fail("No issue") unless @issue
+
+  puts "  Packaging...".green
 
   dir = "#{Dir.pwd}/#{@issue}/Output"
 

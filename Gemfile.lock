@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     awesome_print (1.2.0)
+    colorize (0.7.3)
     metadown (1.0.1)
       redcarpet
     redcarpet (3.1.2)
@@ -12,5 +13,6 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
+  colorize
   metadown
   sass
