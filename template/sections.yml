@@ -1,18 +1,18 @@
-culture:
-  title: Culture
-  description: Cool Culture Shit
 school-life:
   title: School Life
   description: Cool school Shit
+current-affairs:
+  title: Current Affairs
+  description: Cool current Shit
+culture:
+  title: Culture
+  description: Cool Culture Shit
+politics-history:
+  title: Politics & History
+  description: Cool politics Shit
 columns:
   title: Columns
   description: Cool col Shit
 sport:
   title: Sport
   description: Cool sport Shit
-politics-history:
-  title: Politics & History
-  description: Cool politics Shit
-current-affairs:
-  title: Current Affairs
-  description: Cool current Shit

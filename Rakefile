@@ -20,7 +20,7 @@ def output_path(issue)
   "#{Dir.pwd}/#{issue}/Output/Unpackaged"
 end
 
-task default: %w[delete directories articles covers assets book_json zip]
+task default: %w[delete directories articles covers index assets book_json zip]
 
 task :delete do
 
@@ -72,6 +72,8 @@ task :articles do
 
   puts "  Rendering Articles:".green
 
+  index = {}
+
   # Loop over the sections
   SECTIONS.each do |section|
 
@@ -82,6 +84,8 @@ task :articles do
     articles = Dir.glob("#{section_path}/*.md")
 
     puts "    #{section}:".red
+
+    article_index = []
 
     # Loop over them
     articles.each do |article|
@@ -103,16 +107,25 @@ task :articles do
       html = renderer.result
 
       # Write it to file
-      html_name = "#{@section}-#{@title}.html"
+      html_name = "#{@section}-" + "#{@title}".gsub(/[^0-9a-z ]/i, '') + ".html"
       html_path = output_path(@issue) + '/articles/' + html_name
 
       puts "      #{html_path}".yellow
 
       File.write(html_path, html)
 
+      html_path.slice!(Dir.pwd)
+      html_path.slice!("/#{@issue}/Output/Unpackaged/")
+
+      article_index.push({title: @title, banner: @banner_image, path: html_path})
+
     end
 
+    index[section] = article_index
+
   end
+
+  File.write(output_path(@issue) + "/index.json", index.to_json)
 
 end
 
@@ -148,8 +161,11 @@ task :covers do
 
   end
 
-  # Front and back covers
+  destination_path = output_path(@issue) + "/covers"
 
+  # Front and back covers
+  FileUtils.cp("#{Dir.pwd}/template/covers/front.html", destination_path)
+  FileUtils.cp("#{Dir.pwd}/template/covers/back.html", destination_path)
 
 end
 
@@ -244,6 +260,33 @@ task :book_json do
 
   # Write it to file
   File.write(path, issue_info.to_json)
+
+end
+
+task :index do
+
+  # Get the issue number from the command line
+  @issue = ENV['ISSUE']
+
+  # Return if it doesn't exist
+  fail("No issue") unless @issue
+
+  puts "  Generating the index".green
+
+  index_template = @template_path + 'index.erb'
+
+  # Load the descriptions
+  @descriptions = YAML.load(File.open("#{Dir.pwd}/template/sections.yml"))
+  @articles = JSON.parse(File.read(output_path(@issue) + "/index.json"))
+
+  renderer = ERB.new(File.read(index_template))
+  html = renderer.result
+
+  path = output_path(@issue) + "/index.html"
+
+  puts "    #{path}".yellow
+
+  File.write(path, html)
 
 end
 

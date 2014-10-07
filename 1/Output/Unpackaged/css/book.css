@@ -44,38 +44,41 @@ h1 {
 /****************************************************************************************************
  * Covers
  */
-.cover.school-life {
-  background: #542C4A;
-  background: linear-gradient(to bottom, #542c4a 20px, rgba(84, 44, 74, 0.9) 66%); }
-.cover.current-affairs {
-  background: #0A9E64;
-  background: linear-gradient(to bottom, #0a9e64 20px, rgba(10, 158, 100, 0.9) 66%); }
-.cover.politics-history {
-  background: #132D78;
-  background: linear-gradient(to bottom, #132d78 20px, rgba(19, 45, 120, 0.9) 66%); }
-.cover.culture {
-  background: #0E6EB2;
-  background: linear-gradient(to bottom, #0e6eb2 20px, rgba(14, 110, 178, 0.9) 66%); }
-.cover.columns {
-  background: #000;
-  background: linear-gradient(to bottom, black 20px, rgba(0, 0, 0, 0.9) 66%); }
-.cover.sport {
-  background: #941E46;
-  background: linear-gradient(to bottom, #941e46 20px, rgba(148, 30, 70, 0.9) 66%); }
-.cover .cover-box {
-  color: rgba(255, 255, 255, 0.9);
-  position: absolute;
-  left: 40px;
-  bottom: 20%; }
-.cover p {
-  font-size: 24px;
-  font-family: 'jaf-bernino-sans';
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  font-weight: 300; }
-  @media only screen and (max-width: 700px) {
-    .cover p {
-      font-size: 16px; } }
+.cover {
+  background-size: cover;
+  background-position: center center; }
+  .cover.school-life {
+    background: #542C4A;
+    background: linear-gradient(to bottom, #542c4a 20px, rgba(84, 44, 74, 0.6) 66%); }
+  .cover.current-affairs {
+    background: #0A9E64;
+    background: linear-gradient(to bottom, #0a9e64 20px, rgba(10, 158, 100, 0.6) 66%); }
+  .cover.politics-history {
+    background: #132D78;
+    background: linear-gradient(to bottom, #132d78 20px, rgba(19, 45, 120, 0.6) 66%); }
+  .cover.culture {
+    background: #0E6EB2;
+    background: linear-gradient(to bottom, #0e6eb2 20px, rgba(14, 110, 178, 0.6) 66%); }
+  .cover.columns {
+    background: #000;
+    background: linear-gradient(to bottom, black 20px, rgba(0, 0, 0, 0.6) 66%); }
+  .cover.sport {
+    background: #941E46;
+    background: linear-gradient(to bottom, #941e46 20px, rgba(148, 30, 70, 0.6) 66%); }
+  .cover .cover-box {
+    color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    left: 40px;
+    bottom: 20%; }
+  .cover p {
+    font-size: 24px;
+    font-family: 'jaf-bernino-sans';
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    font-weight: 300; }
+    @media only screen and (max-width: 700px) {
+      .cover p {
+        font-size: 16px; } }
 
 .cover-background {
   width: 100%;
@@ -108,7 +111,7 @@ h1 {
   margin: 0 auto; }
 
 header {
-  margin-top: 3em;
+  margin-top: 5em;
   margin-bottom: 3em;
   font-family: 'jaf-bernino-sans', sans-serif;
   padding-bottom: 5%;
@@ -116,7 +119,7 @@ header {
   header h1 {
     font-family: 'jaf-bernino-sans', sans-serif;
     font-style: normal;
-    line-height: 1;
+    line-height: 1.1;
     font-weight: 700;
     font-size: 60px;
     letter-spacing: -0.04em;
@@ -163,6 +166,9 @@ header {
             line-height: 1.2; } }
   header.light h1, header.light h2 {
     color: white; }
+  @media only screen and (min-device-width: 768px) and (orientation: landscape) {
+    header.light h1, header.light h2 {
+      color: black; } }
 
 article {
   text-align: justify;
@@ -176,8 +182,8 @@ article {
   line-height: 1.5;
   font-family: 'freight-text-pro', serif; }
   @media only screen and (min-device-width: 768px) and (orientation: landscape) {
-    article {
-      margin-top: 65%; } }
+    article.banner {
+      margin-top: 50%; } }
   article img {
     width: 100%;
     margin-top: 20px;

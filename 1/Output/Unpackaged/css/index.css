@@ -1,0 +1,97 @@
+@import url(fonts.css);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 2800px; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+/****************************************************************************************************
+ * Typography
+ */
+/****************************************************************************************************
+ * Index
+ */
+/****************************************************************************************************
+* Section Colours
+*/
+#index .navigation ol {
+  display: inline;
+  padding: 0;
+  margin-right: 60px; }
+
+#index .navigation a {
+  background-color: white;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  width: 150px;
+  height: 150px;
+  vertical-align: bottom;
+  background-size: cover;
+  background-position: center center;
+  font-family: 'jaf-bernino-sans', sans-serif;
+  font-style: normal;
+  line-height: 1.1;
+  font-weight: 300;
+  font-size: 20px;
+  color: black; }
+  #index .navigation a.school-life {
+    background-color: #542C4A; }
+  #index .navigation a.current-affairs {
+    background-color: #0A9E64; }
+  #index .navigation a.politics-history {
+    background-color: #132D78; }
+  #index .navigation a.culture {
+    background-color: #0E6EB2; }
+  #index .navigation a.columns {
+    background-color: #000; }
+  #index .navigation a.sport {
+    background-color: #941E46; }
+  #index .navigation a span {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    padding: 10px; }
+  #index .navigation a.section {
+    font-family: 'volkorn', serif;
+    font-style: italic;
+    letter-spacing: -2px;
+    font-size: 35px; }
+  #index .navigation a.section, #index .navigation a.banner {
+    color: white; }
+
+div.section {
+  display: inline-block;
+  padding-top: 5px;
+  margin-right: 10px; }
+  div.section.school-life {
+    background-color: #542C4A; }
+  div.section.current-affairs {
+    background-color: #0A9E64; }
+  div.section.politics-history {
+    background-color: #132D78; }
+  div.section.culture {
+    background-color: #0E6EB2; }
+  div.section.columns {
+    background-color: #000; }
+  div.section.sport {
+    background-color: #941E46; }
+
+#index .navigation li a {
+  font-family: "BodoniSvtyTwoITCTT-Book", Times, serif;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 150px;
+  height: 150px; }

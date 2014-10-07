@@ -1,0 +1,124 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 15px;
+	background: rgba(0, 0, 0, 0.5);
+
+	width: 2800px;
+}
+
+a {
+  color: white;
+	text-decoration: none;
+}
+
+
+/****************************************************************************************************
+ * Typography
+ */
+
+@import url(fonts.css);
+
+/****************************************************************************************************
+ * Index
+ */
+
+
+/****************************************************************************************************
+* Section Colours
+*/
+
+$school-life: #542C4A;
+$current-affairs: #0A9E64;
+$politics-history: #132D78;
+$culture: #0E6EB2;
+$columns: #000;
+$sport: #941E46;
+
+#index .navigation ol {
+  display: inline;
+  padding: 0;
+  margin-right: 60px;
+}
+
+#index .navigation a {
+
+	background-color: white;
+
+  display: inline-block;
+
+  overflow: hidden;
+  position: relative;
+
+  padding: 0;
+  width: 150px;
+  height: 150px;
+
+  vertical-align: bottom;
+
+	background-size: cover;
+	background-position: center center;
+
+	&.school-life        { background-color: $school-life; }
+	&.current-affairs    { background-color: $current-affairs; }
+	&.politics-history   { background-color: $politics-history; }
+	&.culture            { background-color: $culture; }
+	&.columns            { background-color: $columns; }
+	&.sport              { background-color: $sport; }
+
+	span {
+		position: absolute;
+		bottom: 0;
+		width: 150px;
+		padding: 10px;
+	}
+
+	font-family: 'jaf-bernino-sans', sans-serif;
+	font-style: normal;
+	line-height: 1.1;
+	font-weight: 300;
+	font-size: 20px;
+
+	color: black;
+
+	&.section {
+		font-family: 'volkorn', serif;
+		font-style: italic;
+		letter-spacing: -2px;
+		font-size: 35px;
+	}
+
+	&.section, &.banner {
+		color: white;
+	}
+}
+
+div.section {
+	display: inline-block;
+	padding-top: 5px;
+	margin-right: 10px;
+	//padding-right: -5px;
+
+	&.school-life        { background-color: $school-life; }
+	&.current-affairs    { background-color: $current-affairs; }
+	&.politics-history   { background-color: $politics-history; }
+	&.culture            { background-color: $culture; }
+	&.columns            { background-color: $columns; }
+	&.sport              { background-color: $sport; }
+
+}
+
+#index .navigation li a {
+  font-family: "BodoniSvtyTwoITCTT-Book", Times, serif;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 150px;
+  height: 150px;
+}
