@@ -4,6 +4,29 @@
     <title>Index</title>
     <meta name="viewport" content="height=202"/>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script src="gfx/jquery.js"></script>
+
+    <script>
+
+        var width = 2000;
+
+        $(function() {
+
+          width = 0;
+
+          $( "div.section" ).each(function( index ) {
+            width = width + $( this ).width();
+          });
+
+          width = width + 120;
+
+          $('body').css('width', width + 'px');
+
+        });
+
+    </script>
+
 </head>
 <body>
   <div id="index">
