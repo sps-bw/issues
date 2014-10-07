@@ -6,9 +6,10 @@
 
 body {
 	margin: 0;
-	padding: 15px;
+	padding-top: 15px;
+	padding-left: 15px;
 	background: rgba(0, 0, 0, 0.5);
-	padding-bottom: 0;
+	width: 1500px;
 }
 
 a {
@@ -38,6 +39,12 @@ $politics-history: #132D78;
 $culture: #0E6EB2;
 $columns: #000;
 $sport: #941E46;
+
+#index {
+	width: 100%;
+	overflow-x: scroll;
+	table-layout: fixed;
+}
 
 #index .navigation ol {
   display: inline;
