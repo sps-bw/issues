@@ -134,6 +134,40 @@ $sport: #941E46;
   }
 }
 
+.back-cover {
+
+  h1 {
+    margin-top: 20px;
+  }
+
+  $width: 350px;
+  $height: 400px;
+
+  margin: 0 auto;
+  position: absolute;
+  width: $width;
+  height: $height;
+  top: 50%;
+  left: 50%;
+  margin-top: -($height / 2);
+  margin-left: -($width / 2);
+  text-align: center;
+
+  .logo {
+    width: 25%;
+  }
+
+  .details {
+    text-align: left;
+    margin-top: 20px;
+    list-style: none;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}
+
 /****************************************************************************************************
  * Articles
  */

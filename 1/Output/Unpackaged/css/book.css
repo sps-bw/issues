@@ -104,6 +104,27 @@ h1 {
     .front-cover {
       background-image: url(../images/covers/front-landscape.jpg); } }
 
+.back-cover {
+  margin: 0 auto;
+  position: absolute;
+  width: 350px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -175px;
+  text-align: center; }
+  .back-cover h1 {
+    margin-top: 20px; }
+  .back-cover .logo {
+    width: 25%; }
+  .back-cover .details {
+    text-align: left;
+    margin-top: 20px;
+    list-style: none; }
+    .back-cover .details li {
+      margin-bottom: 10px; }
+
 /****************************************************************************************************
  * Articles
  */
