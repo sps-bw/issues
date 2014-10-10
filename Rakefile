@@ -161,11 +161,15 @@ task :covers do
 
   end
 
-  destination_path = output_path(@issue) + "/covers"
+  endparts_path = "#{Dir.pwd}/template/covers/"
+  puts front_path = endparts_path + "front.html"
+  puts back_path = endparts_path + "back.html"
+
+  destination_path = output_path(@issue) + "/covers/"
 
   # Front and back covers
-  FileUtils.cp("#{Dir.pwd}/template/covers/front.html", destination_path)
-  FileUtils.cp("#{Dir.pwd}/template/covers/back.html", destination_path)
+  FileUtils.cp(front_path, destination_path + "front.html")
+  FileUtils.cp(back_path, destination_path + "back.html")
 
 end
 
@@ -227,7 +231,7 @@ task :book_json do
   issue_info.merge!(default_info)
 
   # Add the date
-  issue_info['date'] = Time.now.strftime("%y-%m-%d")
+  issue_info['date'] = Time.now.strftime("%Y-%m-%d")
 
   all_pages = []
 

@@ -109,6 +109,29 @@ $sport: #941E46;
   height: 100%;
   position: absolute;
   background-size: cover;
+  background-attachment: fixed;
+}
+
+.front-cover {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-color: black;
+  background-image: url(../images/covers/front-portrait.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  @media screen and (orientation:portrait) {
+    background-image: url(../images/covers/front-portrait.jpg);
+  }
+
+  @media screen and (orientation:landscape) {
+    background-image: url(../images/covers/front-landscape.jpg);
+  }
 }
 
 /****************************************************************************************************
