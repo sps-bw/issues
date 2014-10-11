@@ -3,13 +3,13 @@ school-life:
   description: Cool school Shit
 current-affairs:
   title: Current Affairs
-  description: Cool current Shit
+  description: "Two dictators, Sino-American relations and U.S culture"
 culture:
   title: Culture
-  description: Cool Culture Shit
+  description: "The latest in film, fashion, art and music news and commentary"
 politics-history:
   title: Politics & History
-  description: Cool politics Shit
+  description: "What happens when things go boom boom"
 columns:
   title: Columns
   description: Cool col Shit
