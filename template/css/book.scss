@@ -283,7 +283,6 @@ header {
 
 article {
   text-align: justify;
-  text-indent: 72px;
   font-size: 24px;
   padding-bottom: 10%;
   word-wrap: break-word;
@@ -291,6 +290,26 @@ article {
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
+
+  hr {
+    margin: 40px 20px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  blockquote {
+    padding-left: 40px;
+    color: #8a8a8a;
+    border-left: 4px solid #8a8aa8;
+  }
+
+  h2 {
+    text-indent: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
   font-family: 'freight-text-pro', serif;
 
