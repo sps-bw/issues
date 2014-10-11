@@ -19,15 +19,15 @@ But perhaps I’m being too harsh on Disney, and in actual fact there are many p
 
 __Pro – More Star Wars films:__ Given the choice, why wouldn’t we want to know what has happened to our beloved characters in all this time?
 
-__Con – More Star Wars films:__	If they’re anything like the recent Clone Wars series (4.2/10 on Rotten Tomatoes), disaster is looming.
+__Con – More Star Wars films:__	If they’re anything like the recent *Clone Wars* series (4.2/10 on Rotten Tomatoes), disaster is looming.
 
-__Con – Jar Jar Binks:__ 	The third most hated movie character of all time, in a recent magazine poll (after Joffrey and Cersei from Game of Thrones), will now be in shops and amusement parks; not the most hotly anticipated thing.
+__Con – Jar Jar Binks:__ 	The third most hated movie character of all time, in a recent magazine poll (after Joffrey and Cersei from *Game of Thrones*), will now be in shops and amusement parks; not the most hotly anticipated thing.
 
 __Pro – Jar Jar Binks:__	Perhaps we’ll finally get to see a death scene?
 
 __Con – Star Wars comics:__	For the much more devoted fanbase, the new films could destroy the Star Wars Expanded Universe, the officially licensed fan-fiction series created by George Lucas. There’s no possible way Disney will either want to, or be able to replicate it.
 
-__Pro – The Marvel franchise:__	Disney purchased Marvel Entertainment Inc. for roughly $4.5bn in 2009. If movies like The Avengers and Guardians of the Galaxy are anything to go by, it shows that Disney understand how to handle a pre-existing fanbase.
+__Pro – The Marvel franchise:__	Disney purchased Marvel Entertainment Inc. for roughly $4.5bn in 2009. If movies like *The Avengers* and *Guardians of the Galaxy* are anything to go by, it shows that Disney understand how to handle a pre-existing fanbase.
 
 __Con – Songs:__ 	As touched on already, many believe that Disney will make the film much more child oriented. Essentially, that means songs; and if they sing “Darth Vader”, there will likely be a riot.
 
