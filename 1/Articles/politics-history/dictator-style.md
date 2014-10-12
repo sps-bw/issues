@@ -1,6 +1,8 @@
 ---
 title: "Dictator Style"
 author: James Cole
+banner: "dictator-style.jpg"
+light: light
 ---
 
 A leopard print cap, a sturdy wooden cane and a pair of thick rimmed glasses could seem like a wardrobe malfunction. How anybody could carry off a style that even the experimental nature of the 70s might deem abhorrent defeats the imagination. And yet nothing else creates a better image of President Mobutu Sese Seko, leader of Zaire for 32 years and one of Africa’s most corrupt dictators.  
