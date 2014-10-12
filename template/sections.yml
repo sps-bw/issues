@@ -1,6 +1,6 @@
 school-life:
   title: School Life
-  description: Cool school Shit
+  description: "Fitting in amongst the fellow socially inept"
 current-affairs:
   title: Current Affairs
   description: "Two dictators, Sino-American relations and U.S culture"
@@ -12,7 +12,10 @@ politics-history:
   description: "What happens when things go boom boom"
 columns:
   title: Columns
-  description: Cool col Shit
+  description: Cool col stuff
 sport:
   title: Sport
-  description: Cool sport Shit
+  description: "Making muppets out of Westminster and co. since 1509"
+editorial:
+  title: Editorial
+  description: "Comment from the editor"
