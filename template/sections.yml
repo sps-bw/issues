@@ -1,3 +1,6 @@
+editorial:
+  title: Editorial
+  description: "Comment from the editor"
 school-life:
   title: School Life
   description: "Fitting in amongst the fellow socially inept"
@@ -16,6 +19,3 @@ columns:
 sport:
   title: Sport
   description: "Making muppets out of Westminster and co. since 1509"
-editorial:
-  title: Editorial
-  description: "Comment from the editor"

@@ -84,6 +84,7 @@ $sport: #941E46;
   &.culture            { @include background-opacity($culture, $cover-opacity); }
   &.columns            { @include background-opacity($columns, $cover-opacity); }
   &.sport              { @include background-opacity($sport, $cover-opacity); }
+  &.editorial          { @include background-opacity($editorial, $cover-opacity); }
 
   .cover-box {
     color: rgba(255, 255, 255, 0.9);
@@ -188,6 +189,7 @@ $sport: #941E46;
   &.culture            { background: $culture; }
   &.columns            { background: $columns; }
   &.sport              { background: $sport; }
+  &.editorial          { background: $editorial; }
 }
 
 .container {
