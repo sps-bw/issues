@@ -1,6 +1,8 @@
 ---
 title: Letters to Erasmus
 author: SPS Pupils
+banner: erasmus.jpg
+light: light
 ---
 
 > Dear Erasmus,<br>
