@@ -1,6 +1,8 @@
 ---
-title: Scottish Devolution and the Breakup of the United Kingdom
+title: Scottish Devolution
 author: Oliver Besley
+banner: scotland.jpg
+light: light
 ---
 
 Last month, in Scotland, there was a referendum, a decision and the potential for arguably the most significant British constitutional moment for three hundred years. Indeed one might argue that the united British identity itself was at stake as the inhabitants of Scotland went to the polls to answer the simple question; ‘should Scotland be an independent country?’ There was a palpable sigh of relief, following a few rather uncomfortable polls for the ‘no’ vote, as the news emerged in the early hours of the morning that Scottish independence had been rejected and Britain remained united as a state.

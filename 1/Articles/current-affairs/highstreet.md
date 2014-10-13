@@ -1,6 +1,8 @@
 ---
 title: "Britain’s High Street: Rest in Peace?"
 author: Christian Kengeter
+banner: hmv.jpg
+light: light
 ---
 
 In January 2013 HMV went bust. Across the UK big yellow signs were plastered onto HMV store windows with huge black lettering reading ‘STORE CLOSING’, EVERYTHING MUST GO’. I watched as shoppers began to stream into my local HMV store, taking advantage of its month-long sale to buy albums they would have usually bought on the internet. Even I joined them in the end. As I pushed my way to the counter one thing occurred to me that would no doubt have occurred to many others: this was the first time in two years since I had bought something in HMV. Until now all of my shopping had taken place on the internet; I was a frequent user of Amazon and had bought the entirety of my Christmas presents online last year - not once had I visited the high street. When I asked friends about their shopping habits my fears were confirmed - more and more people were using the internet to satisfy their consumerist needs and the high street was suffering as a result.

@@ -1,6 +1,8 @@
 ---
 title: Containing the Dragon
 author: Adam Rachman
+banner: china.jpg
+light: light
 ---
 
 All of the students at St Pauls, and the most of the parents and staff were born into a quiet empire. The global cultural, military and economic dominance of the United States since the end of World War Two is so ingrained in our society today and so universal that often we fail to appreciate the awe inspiring influence which one nation wields over the entire planet. The vast majority of people alive today were born into an American earth, but the signs suggest we are reaching the end of the ‘American Age’,and we may well die in a new world, a Chinese world.
