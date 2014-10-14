@@ -1,5 +1,5 @@
 ---
-title: "America, F*ck Yeah"
+title: "World Police"
 author: Tyler Jackson
 banner: america.jpg
 light: light
