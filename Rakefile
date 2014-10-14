@@ -11,7 +11,7 @@ require 'colorize'
 
 require_relative 'lib.rb'
 
-SECTIONS = ['editorial', 'current-affairs', 'politics-history', 'culture', 'sport', 'school-life', 'columns']
+SECTIONS = ['editorial', 'school-life', 'current-affairs', 'politics-history', 'culture', 'sport', 'columns']
 
 # Get the template
 @template_path = "#{Dir.pwd}/template/templates/"

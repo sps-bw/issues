@@ -2,13 +2,17 @@ editorial:
   title: Editorial
   description: "Comment from the editor"
 
+school-life:
+  title: School Life
+  description: "Fitting in amongst the fellow socially inept"
+
 current-affairs:
   title: Current Affairs
   description: "Two dictators, Sino-American relations and U.S culture"
 
 politics-history:
   title: Politics & History
-  description: "What happens when things go boom boom"
+  description: "War, and the things in between"
 
 culture:
   title: Culture
@@ -16,12 +20,8 @@ culture:
 
 sport:
   title: Sport
-  description: "Making muppets out of Westminster and co. since 1509"
-
-school-life:
-  title: School Life
-  description: "Fitting in amongst the fellow socially inept"
+  description: "From England's footballing failures to European golf success"
 
 columns:
   title: Columns
-  description: Cool col stuff
+  description: "Regular contributions from our opinionated columnists"
