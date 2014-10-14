@@ -1,21 +1,27 @@
 editorial:
   title: Editorial
   description: "Comment from the editor"
-school-life:
-  title: School Life
-  description: "Fitting in amongst the fellow socially inept"
+
 current-affairs:
   title: Current Affairs
   description: "Two dictators, Sino-American relations and U.S culture"
-culture:
-  title: Culture
-  description: "The latest in film, fashion, art and music news and commentary"
+
 politics-history:
   title: Politics & History
   description: "What happens when things go boom boom"
-columns:
-  title: Columns
-  description: Cool col stuff
+
+culture:
+  title: Culture
+  description: "The latest in film, fashion, art and music news and commentary"
+
 sport:
   title: Sport
   description: "Making muppets out of Westminster and co. since 1509"
+
+school-life:
+  title: School Life
+  description: "Fitting in amongst the fellow socially inept"
+
+columns:
+  title: Columns
+  description: Cool col stuff

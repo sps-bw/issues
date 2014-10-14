@@ -11,7 +11,7 @@ require 'colorize'
 
 require_relative 'lib.rb'
 
-SECTIONS = ['editorial', 'current-affairs', 'politics-history', 'culture', 'school-life',  'columns', 'sport']
+SECTIONS = ['editorial', 'current-affairs', 'politics-history', 'culture', 'sport', 'school-life', 'columns']
 
 # Get the template
 @template_path = "#{Dir.pwd}/template/templates/"
@@ -81,7 +81,7 @@ task :articles do
     section_path = "#{dir}/Articles/#{section}"
 
     # Array of all the markdown files
-    articles = Dir.glob("#{section_path}/*.md")
+    articles = Dir.glob("#{section_path}/*.md").sort!
 
     puts "    #{section}:".red
 
@@ -92,6 +92,7 @@ task :articles do
 
       # Render the input markdown
       data = Metadown.render(File.read(article))
+      save_name = File.basename(article, ".md").gsub(/[^0-9a-z ]/i, '') + '.html'
 
       # Set up the variables for the view
       @article_text = data.output
@@ -107,7 +108,7 @@ task :articles do
       html = renderer.result
 
       # Write it to file
-      html_name = "#{@section}-" + "#{@title}".gsub(/[^0-9a-z ]/i, '') + ".html"
+      html_name = "#{@section}-" + save_name
       html_path = output_path(@issue) + '/articles/' + html_name
 
       puts "      #{html_path}".yellow
