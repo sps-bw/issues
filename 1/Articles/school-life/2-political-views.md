@@ -3,15 +3,15 @@ title: "St Paul’s Pupils at the Political Extremes"
 author: Quentin Mareuse
 ---
 
-Political views of students at schools with as notorious a reputation for elitism as SPS always stimulate controversy and accusatory prejudice amongst the students’ peers. One of the reasons for this is how extreme (or, more likely, purportedly extreme) they often are. I have here compiled a brief, arbitrary, and totally uncomprehensive list of the categories that these politically “extreme” Paulines usually fall into. Avoid associating with them.
+Political views of students at schools with as notorious a reputation for elitism as SPS always stimulate controversy and accusatory prejudice amongst the students’ peers. One of the reasons for this is how extreme (or, more likely, purportedly extreme) they often are. I have here compiled a brief, arbitrary, and totally non-comprehensive list of the categories that these politically “extreme” Paulines usually fall into. Avoid associating with them.
 
 ## 1. The Champagne Socialist
 
 Probably the most prominent and easily identifiable. It is not particularly malicious, but just repulsively hypocritical. This guy will sing the virtues of equality and Marxist thought all day and get picked up by his white-gloved chauffeur at 4:15. Can be spotted around its principal hangouts in Central London, namely Hyde Park Corner and Parliament Square by day, and Mahiki, Le Gavroche, and Boujis by night.
 
-## 2. The Brutal Fascist
+## 2. The Right Wing Radical
 
-The most hated breed of Pauline radicalists. This is because, no matter how many Mussolini speeches he has downloaded onto his iPod, everyone knows that this guy is donning a persona solely for attention. He’ll devote entire lunch breaks to discoursing about the weaknesses of democracy to bored peers or fourth formers minutely entertained by his edginess.
+The most hated breed of Pauline radicalist. This is because, no matter how many Mussolini speeches he has downloaded onto his iPod, everyone knows that this guy is donning a persona solely for attention. He’ll devote entire lunch breaks to discoursing about the weaknesses of democracy to bored peers or fourth formers minutely entertained by his edginess.
 
 ## 3. The Conservative Toff
 
@@ -19,7 +19,7 @@ Undoubtedly the most common member of the set, with membership ranging from 10 t
 
 ## 4. The Unadulterated Populist
 
-This man has literally no shame in supporting whatever is à la mode at the time. He considers politics as little more than a point of interest, unconcealedly prioritises flair, rhetoric, and personal appeal in a politician over sound policies, and is swayed with the masses at every turn. At the moment, UKIP is very popular amongst this strain of Pauline radicals.
+This man has literally no shame in supporting whatever is à la mode at the time. He considers politics as little more than a point of interest, un-surreptitiously  prioritises flair, rhetoric, and personal appeal in a politician over sound policies, and is swayed with the masses at every turn. At the moment, UKIP is very popular amongst this strain of Pauline radicals.
 
 ## 5. The Loony Liberal
 

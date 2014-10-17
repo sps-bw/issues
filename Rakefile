@@ -163,10 +163,13 @@ task :covers do
   end
 
   endparts_path = "#{Dir.pwd}/template/covers/"
-  puts front_path = endparts_path + "front.html"
-  puts back_path = endparts_path + "back.html"
+  front_path = endparts_path + "front.html"
+  back_path = endparts_path + "back.html"
 
   destination_path = output_path(@issue) + "/covers/"
+
+  puts "    #{destination_path}front.html".yellow
+  puts "    #{destination_path}back.html".yellow
 
   # Front and back covers
   FileUtils.cp(front_path, destination_path + "front.html")

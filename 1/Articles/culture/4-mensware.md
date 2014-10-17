@@ -1,6 +1,8 @@
 ---
 title: "Menswear: Why You Should Care About It"
 author: Albert Meek
+banner: mensware.jpg
+light: light
 ---
 
 St Paul's. Truly the fashion epicentre of North Barnes. Between the burgundy trousers and the floral ties, it's a wonder Teen Vogue hasn't done a spread on us already. Despite, however, the effortless and refined beauty of each of the ’JP Morgan internship’ ensembles that grace the atrium each morning, I am sure the fact that London Fashion Week was held last month in the capital passed at least 95% of you by. The other 5% percent probably know me, and therefore have had it plastered across social media and daily conversation.

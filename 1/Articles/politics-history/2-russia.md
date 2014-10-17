@@ -1,6 +1,8 @@
 ---
 title: Ukraine and Russia
 author: J Robine
+banner: ukraine-russia.jpg
+light: light
 ---
 
 The ground we tread on is suffused with blood- every country, every territory or hectare of sea, has been fought over. Yet there are a few places on earth that are exceptionally bloodthirsty. America, where entire cultures, races hundreds of millions strong, are not only destroyed but forgotten. Israel, which has known no peace these past four thousand years. Yet in my mind nowhere on earth reeks of death the way Slavic Europe does. There, the worst and most notorious genocides, battles and famines, mass slaughters and pillages have been carried out by Jew and German, Russian and Turk, Mongol and Swede, Arab and Italian, Greek and Scythian, for as long as we can tell. The Russian word for ‘safety’, bezopasnost’, literally means ‘without danger’. Every state worth its salt has a purpose and a creed, based on a founding story. The US exists for individualist capitalism, Pakistan exists as an Islamic state, the EU exists as a buffer against extremism. Russia’s raison d’etre lies in the ‘opasnost’; it lives to make sense, goodness and beauty, in the midst of the staggering chaos that is Eastern Europe.

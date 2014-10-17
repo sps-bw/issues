@@ -1,6 +1,8 @@
 ---
 title: "Cuba: The Communist dream?"
 author: Alexander Mavroleon
+banner: cuba.png
+light: light
 ---
 
 Picture the scene: a warm tropical city, bustling with new cars – the latest 1952 Buick – and having your mojito brought to you as you sit admiring what lovely holiday you booked at Havana’s hotel Nacional. In the USA, Cuba is admired by the government – and by the media. The world looks at Cuba like it looks at any other Caribbean holiday destination – and you revel in luxury you have conveniently chosen.

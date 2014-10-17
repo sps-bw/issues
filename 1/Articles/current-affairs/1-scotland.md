@@ -5,7 +5,7 @@ banner: scotland.jpg
 light: light
 ---
 
-Last month, in Scotland, there was a referendum, a decision and the potential for arguably the most significant British constitutional moment for three hundred years. Indeed one might argue that the united British identity itself was at stake as the inhabitants of Scotland went to the polls to answer the simple question; ‘should Scotland be an independent country?’ There was a palpable sigh of relief, following a few rather uncomfortable polls for the ‘no’ vote, as the news emerged in the early hours of the morning that Scottish independence had been rejected and Britain remained united as a state.
+Last month, in Scotland, there was a referendum, a decision and the potential for arguably the most significant British constitutional moment in three hundred years. Indeed one might argue that the united British identity itself was at stake as the inhabitants of Scotland went to the polls to answer the simple question; ‘should Scotland be an independent country?’ There was a palpable sigh of relief, following a few rather uncomfortable polls for the ‘no’ vote, as the news emerged in the early hours of the morning that Scottish independence had been rejected and Britain remained united as a state.
 
 Alongside the relief, however, stood the stark realisation that 45 percent of those who had gone to the polls had done so with the intention of breaking up the United Kingdom. This 45 percent still wished to ‘go it alone’ in an independent Scotland in spite of the promises by the three largest Westminster party leaders that ‘devo-max’ (more eloquently described as full fiscal autonomy) would be given to Scotland following a ‘no vote’.
 

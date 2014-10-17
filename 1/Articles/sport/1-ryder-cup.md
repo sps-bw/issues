@@ -1,6 +1,7 @@
 ---
 title: "The Ryder Cup and Why You Should Care"
 author: Daniel Taktak
+banner: ryder-cup.jpg
 ---
 
 ‘And a half.’ If you hear this expression around the atrium then you know that one of two things is being discussed, either: scrambling to finish Maths prep before the bell or discussing the emphatic nature of Europe’s Ryder Cup victory by 16.5 points to 11.5. However, here lies an issue. The issue is that too many times people were discussing the former, not the latter. It seems that too few tutor groups began their Monday morning by discussing the heroics of Jamie Donaldson and instead focused on more common issues such as prep left over from the weekend.

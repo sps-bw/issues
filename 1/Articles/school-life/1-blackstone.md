@@ -5,9 +5,9 @@ author: Issam Azzam
 
 *Reverend James Blackstone became a new member of staff this year and obviously it was necessary to find out more information about the man who was going to fill the boots of Rev. Allsop. So I suppose it was my Pauline duty to find out if he was up to scratch. Thank God (pardon the pun) I was not disappointed.*
 
-__What drew you to Philosophy?__
+__B&W: What drew you to Philosophy?__
 
-‘It’s what draws anyone to Philosophy. Questioning. Questioning. Questioning. Constant relentless questioning. Philosophy is just a generalisation of questions. Take nothing for granted.’
+Blackstone: ‘It’s what draws anyone to Philosophy. Questioning. Questioning. Questioning. Constant relentless questioning. Philosophy is just a generalisation of questions. Take nothing for granted.’
 
 __Now that you have observed our behaviour, what piece of advice would you give to Paulines?__
 
