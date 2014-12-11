@@ -277,6 +277,7 @@ header {
   &.light {
     h1, h2 {
       color: white;
+      text-shadow: 0px 0px 8px black;
     }
 
     @media #{$ipad-landscape} {
@@ -318,6 +319,22 @@ article {
   }
 
   font-family: 'freight-text-pro', serif;
+
+  table {
+
+    width: 100%;
+    text-align: center;
+
+    td {
+      padding: 10px;
+    }
+
+    tr th {
+      border-bottom: 2px solid black;
+      margin-bottom: 20px;
+    }
+
+  }
 
   @media #{$ipad-landscape} {
     &.banner {
