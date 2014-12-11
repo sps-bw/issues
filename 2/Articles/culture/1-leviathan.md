@@ -1,6 +1,8 @@
 ---
 title: "Film Review - Leviathan"
 author: Paul Norris
+banner: leviathan.jpg
+light: light
 ---
 
 Oceans have seldom encapsulated as much foreboding as the Arctic does in *Leviathan*. Throughout the film, the blue-grey expanse churns and purrs, gradually swallowing piece after piece of the characters’ lives. If *Leviathan*’s characters are stoic, then the landscapes themselves must be assigned the same characteristic. They are weather blown and haggard; all vibrancy has been drained to revel bare rock, earth and foliage.

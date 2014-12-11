@@ -1,6 +1,8 @@
 ---
 title: Ask Erasmus
-author: ""
+author: "SPS Pupils"
+banner: erasmus.jpg
+light: light
 ---
 
 > Dear Erasmus, as a fourth former, when I walk to the illustrious temple of the Broadway, I take pride in wearing my school blazer, my polished shoes and with a wheelie bag in hand. However, now I am being informed by the Daily Mail that the school insists that I must adopt the uniform of the local ‘youths’ which consists of a hoodie and trainers. How can I be seen to be wearing such garments? And where does one even purchase these so called ‘hood-ies’??

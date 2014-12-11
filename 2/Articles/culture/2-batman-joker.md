@@ -1,6 +1,8 @@
 ---
 title: Examining and Exploring the Relationship between Batman and The Joker
 author: Rishi Jindal
+banner: joker.jpg
+light: light
 ---
 
 One of the most iconic super villains of all time, The Joker has been around since Batman’s inception and has plagued the Caped Crusader for more than 70 years. There have been numerous interpretations and alterations to his character but his core identity is instantly recognisable.

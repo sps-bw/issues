@@ -1,5 +1,5 @@
 ---
-title: "Did Mother Die Today?"
+title: 'Did Mother Die Today?'
 author: "James Lamming"
 ---
 
@@ -23,4 +23,4 @@ The second is the more contentious, a subject on which papers, articles and blog
 
 I will set out my final proposal: "Today, maman died". Many would bill this as "lazy" or "arrogant" to leave a word untranslated, but hear me out. We have, I hope, agreed that there is no perfect fit for the word maman in the English language, and so surely using a new word, which for an English speaking audience would carry little or no semantic baggage, thought clearly recognisable or at least guessable as the word for mother, is better, or at least no worse, than a word which brings with it unsuitable semantic baggage such as *mother* or *mummy*.
 
-Even as I sit here now dashing off a conclusion to this article, I am not happy with my finished sentence. It is not true to the original and, in my heart of hearts, I know it never will be; *traduttore tradittore*, as they say in Italy. 
+Even as I sit here now dashing off a conclusion to this article, I am not happy with my finished sentence. It is not true to the original and, in my heart of hearts, I know it never will be; *traduttore tradittore*, as they say in Italy.

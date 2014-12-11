@@ -1,6 +1,8 @@
 ---
-title: Film Review: Interstellar
+title: "Film Review: Interstellar"
 author: Albert Meek
+banner: interstellar.jpg
+light: light
 ---
 
 Every year, there are a few films that force you to leave the cinema with an open mouth, whispering 'Whoa...' to yourself, and to the person you dragged along with you at short notice with promises of free popcorn and complex plot twists. Interstellar, in my opinion, is one of these films. (Please be warned that I will try to keep any spoilers minimal and vague, but they may still crop up.)
