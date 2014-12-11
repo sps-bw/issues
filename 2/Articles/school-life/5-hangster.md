@@ -3,6 +3,8 @@ title: "The St Paul’s Hangster Survival Guide"
 author: "Leo von MaLlisé"
 ---
 
+I write this article to extend the hand of comradeship to those who share my frustrations. In one’s doings around the fine institution of St Paul’s, it is inevitable that you will encounter several of the subspecies I have dubbed the “hangster” - that is, the “hipster-gangster”.
+
 A few tips for spotting such individuals:
 
 ## Scouting Tip 1
