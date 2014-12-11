@@ -283,6 +283,7 @@ header {
     @media #{$ipad-landscape} {
       h1, h2 {
         color: black;
+        text-shadow: none;
       }
     }
   }

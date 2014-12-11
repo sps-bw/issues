@@ -1,5 +1,5 @@
 ---
-title: Examining and Exploring the Relationship between Batman and The Joker
+title: Exploring the Relationship between Batman and The Joker
 author: Rishi Jindal
 banner: joker.jpg
 light: light

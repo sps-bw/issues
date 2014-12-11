@@ -104,6 +104,10 @@ $sport: #941E46;
 	&.section, &.banner {
 		color: white;
 	}
+
+	&.banner {
+		text-shadow: 0 0 4px black;
+	}
 }
 
 div.section {
