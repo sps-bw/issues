@@ -22,6 +22,27 @@ end
 
 task default: %w[delete directories articles covers index assets book_json zip]
 
+task :new do
+
+  # Get the issue number from the command line
+  @issue = ENV['ISSUE']
+
+  # Return if it doesn't exist
+  fail("No issue") unless @issue
+
+  @base = "#{Dir.pwd}/#{@issue}"
+
+  FileUtils.mkdir(@base)
+  FileUtils.mkdir("#{@base}/Articles")
+  FileUtils.mkdir("#{@base}/Images")
+  FileUtils.mkdir("#{@base}/Output")
+
+  SECTIONS.each do |section|
+    FileUtils.mkdir("#{@base}/Articles/#{section}")
+  end
+
+end
+
 task :delete do
 
   # Get the issue number from the command line
