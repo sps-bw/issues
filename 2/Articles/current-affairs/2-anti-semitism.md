@@ -1,5 +1,5 @@
 ---
-title: "The new anti-Semitism?"
+title: "The New Anti-Semitism?"
 author: "Jake O'Keeffe & Theo Anton"
 ---
 

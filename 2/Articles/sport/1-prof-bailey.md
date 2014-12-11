@@ -1,5 +1,6 @@
 ---
 title: "Professor Bailey: Sporting Career and St Paul’s"
+author: "James Ritchie"
 ---
 
 __B&W: To start with a relatively easy question, you have played both cricket and rugby to a very high standard, but which do you actually prefer to play and which do you prefer to watch?__
