@@ -32,10 +32,8 @@
   <div id="index">
     <div class="navigation">
       <ol>
-        <% @descriptions.each do |section| %>
-          <div class="section <%= section[0] %>">
-            <a class="section <%= section[0] %>" href="covers/<%= section[0] %>.html"><span class="text"><%= section[1]['title'] %></span></a>
-            <% @articles[section[0]].each do |article| %>
+          <div class="section">
+            <% @articles.each do |article| %>
               <% if article['banner'] %>
                 <a href="<%= article['path'] %>" style="background-image: url(images/<%= article['banner'] %>)" class="banner"><span class="text"><%= article['title'] %></span></a>
               <% else %>
@@ -43,7 +41,6 @@
               <% end %>
             <% end %>
           </div>
-        <% end %>
       </ol>
     </div>
   </div>

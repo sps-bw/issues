@@ -11,7 +11,7 @@ require 'colorize'
 
 require_relative 'lib.rb'
 
-SECTIONS = ['editorial', 'school-life', 'current-affairs', 'politics-history', 'culture', 'sport', 'columns']
+# SECTIONS = ['editorial', 'school-life', 'current-affairs', 'politics-history', 'culture', 'sport', 'columns']
 
 # Get the template
 @template_path = "#{Dir.pwd}/template/templates/"
@@ -36,10 +36,6 @@ task :new do
   FileUtils.mkdir("#{@base}/Articles")
   FileUtils.mkdir("#{@base}/Images")
   FileUtils.mkdir("#{@base}/Output")
-
-  SECTIONS.each do |section|
-    FileUtils.mkdir("#{@base}/Articles/#{section}")
-  end
 
 end
 
@@ -93,61 +89,45 @@ task :articles do
 
   puts "  Rendering Articles:".green
 
-  index = {}
+  # Array of all the markdown files
+  articles = Dir.glob("#{dir}/Articles/*.md").sort!
 
-  # Loop over the sections
-  SECTIONS.each do |section|
+  article_index = []
 
-    # The path of the section
-    section_path = "#{dir}/Articles/#{section}"
+  # Loop over them
+  articles.each do |article|
 
-    # Array of all the markdown files
-    articles = Dir.glob("#{section_path}/*.md").sort!
+    # Render the input markdown
+    data = Metadown.render(File.read(article))
+    save_name = File.basename(article, ".md").gsub(/[^0-9a-z ]/i, '') + '.html'
 
-    puts "    #{section}:".red
+    # Set up the variables for the view
+    @article_text = data.output
 
-    article_index = []
+    @author = data.metadata['author']
+    @title = data.metadata['title']
+    @banner_image = data.metadata['banner']
+    @light = data.metadata['light']
 
-    # Loop over them
-    articles.each do |article|
+    # Render the HTML
+    renderer = ERB.new(File.read(@template_path + 'article.erb'))
+    html = renderer.result
 
-      # Render the input markdown
-      data = Metadown.render(File.read(article))
-      save_name = File.basename(article, ".md").gsub(/[^0-9a-z ]/i, '') + '.html'
+    # Write it to file
+    html_path = output_path(@issue) + '/articles/' + save_name
 
-      # Set up the variables for the view
-      @article_text = data.output
+    puts "      #{html_path}".yellow
 
-      @section = section
-      @author = data.metadata['author']
-      @title = data.metadata['title']
-      @banner_image = data.metadata['banner']
-      @light = data.metadata['light']
+    File.write(html_path, html)
 
-      # Render the HTML
-      renderer = ERB.new(File.read(@template_path + 'article.erb'))
-      html = renderer.result
+    html_path.slice!(Dir.pwd)
+    html_path.slice!("/#{@issue}/Output/Unpackaged/")
 
-      # Write it to file
-      html_name = "#{@section}-" + save_name
-      html_path = output_path(@issue) + '/articles/' + html_name
-
-      puts "      #{html_path}".yellow
-
-      File.write(html_path, html)
-
-      html_path.slice!(Dir.pwd)
-      html_path.slice!("/#{@issue}/Output/Unpackaged/")
-
-      article_index.push({title: @title, banner: @banner_image, path: html_path})
-
-    end
-
-    index[section] = article_index
+    article_index.push({title: @title, banner: @banner_image, path: html_path})
 
   end
 
-  File.write(output_path(@issue) + "/index.json", index.to_json)
+  File.write(output_path(@issue) + "/index.json", article_index.to_json)
 
 end
 
@@ -160,28 +140,6 @@ task :covers do
   fail("No issue") unless @issue
 
   puts "  Rendering covers...".green
-
-  # Load the descriptions
-  descriptions = YAML.load(File.open("#{Dir.pwd}/template/sections.yml"))
-
-  SECTIONS.each do |section|
-
-    cover_template = @template_path + 'cover.erb'
-
-    @section = section
-    @section_title = descriptions[@section]['title']
-    @description = descriptions[@section]['description']
-
-    renderer = ERB.new(File.read(cover_template))
-    html = renderer.result
-
-    html_path = "#{output_path(@issue)}/covers/#{@section}.html"
-
-    puts "    #{html_path}".yellow
-
-    File.write(html_path, html)
-
-  end
 
   endparts_path = "#{Dir.pwd}/template/covers/"
   front_path = endparts_path + "front.html"
@@ -263,27 +221,19 @@ task :book_json do
   # Add the front cover
   all_pages << "covers/front.html"
 
-  # Load all the articles
-  SECTIONS.each do |section|
+  # Add all the articles
+  path = output_path(@issue) + "/articles/"
+  articles = Dir.glob(path + "*.html")
 
-    # Add the cover
-    all_pages << "covers/#{section}.html"
-
-    # Add all the articles
-    path = output_path(@issue) + "/articles/"
-    articles = Dir.glob(path + "#{section}-*.html")
-
-    articles.each do |article|
-      all_pages << "articles/" + File.basename(article)
-    end
-
+  articles.each do |article|
+    all_pages << "articles/" + File.basename(article)
   end
 
   # Add the back cover info
   all_pages << "covers/back.html"
 
   issue_info['contents'] = all_pages
-  issue_info['url'] = "book://bw.alfo.im/issues/#{@issue}"
+  issue_info['url'] = "book://spsblackandwhite.com/issues/#{@issue}"
 
   path = output_path(@issue) + "/book.json"
 
@@ -305,7 +255,6 @@ task :index do
   index_template = @template_path + 'index.erb'
 
   # Load the descriptions
-  @descriptions = YAML.load(File.open("#{Dir.pwd}/template/sections.yml"))
   @articles = JSON.parse(File.read(output_path(@issue) + "/index.json"))
 
   renderer = ERB.new(File.read(index_template))

@@ -1,0 +1,18 @@
+---
+title: Growing Pains
+author: Mr Anthony
+light: light
+banner: redev.png
+---
+
+“Architecture is the learned game, correct and magnificent, of forms assembled in the light,” declared Le Corbusier, the Swiss-French pioneer of modern architecture. Well, forms assembled in the late September drizzle in our case. If you were to travel to school by chauffeured helicopter (as I often do: staff parking is a nightmare), the view at your feet as you traversed the Thames would present a patchwork of architectural styles and ambitions – not to mention portacabins and so many men in Hi Vis vests that the school could well be gearing up to house and staff Heathrow’s proposed third runway. For we are living in a time of transition and, like Caitlyn Jenner before us, our identity is undergoing a bold and long-overdue aesthetic overhaul.
+
+You may be forgiven for thinking that the turbulence of the building work has passed me by, ensconced as I am in the palatial tranquillity of the Drama Centre with its river views, carpeted hush and imposing tan-brick fronting (presenting to the school a mighty climbing wall for mountaineers with stunted fingers). Alas no. Barely a month in the new building and the sparkle of water in the morning light and the soft pad of passing joggers on the towpath were but distant memories, once the Estates Department dumped a row of portacabins directly outside my window. I had intended to bring in scraps of bread from home to toss nonchalantly at passing ducks (or a hungry rower) during a quiet free period, but I’ll never reach the water now with those monstrosities blocking my aim.
+
+Elsewhere, luckily, steps have been taken to minimise the visual pollution that any prolonged period of renovation is bound to generate; indeed with those pretty green fence panels flanking Founders Court and shielding the demolition of the old dining hall from view, I barely noticed the 200ft crane lurching overhead, splintering irrevocably the entire building with the destructive vigour of Bruce Lee doing the can-can on a polystyrene dance floor.
+
+And as for the noise? No classroom is safe from the subterranean rumble of drills and mixers that can course, at irregular intervals, through the school’s veins. The eponymous tragic hero of King Lear may well have had to battle against the cacophony of the storm, but try teaching the play against the backdrop of an industrial buzz saw in full concrete-cutting swing; it’s hard to focus on the poetry.
+
+Not all the disruptions are so disagreeable however. I for one welcome the magnificent white marquee that now looms over John Colet and lends a party atmosphere to the mundanity of the daily dine. Lighter and more airy than the previous refectory, it reminds me of the Essex weddings of my youth where the mother of the bride could be guaranteed to be engaged in slurred flirtation with the male waiting staff before the first toast was raised, and you were never more than ten feet away from a sausage roll platter.
+
+Indeed I think the only way to get through the upheaval of the next few years is to be inspired, rather than repelled, by the architectural chaos of our surroundings. To that end, I have requested that every lunchtime Mr King (in top hat and tails) greets diners with menus in the style of ‘Order of Service’ booklets, white doves are ceremonially released every time someone drops a tray, and we all finish off our pudding with a rousing sing-along to that perennial wedding party wind-down, “New York New York”, before throwing confetti at each other and piling into waiting taxis to head off to afternoon lessons…
