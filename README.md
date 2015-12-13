@@ -9,3 +9,7 @@ Install Ruby on your system if you don't have it already (I recommend RVM). Then
 ## 1. Create a new issue
 
 Run `rake new ISSUE=n`, where `n` is the next issue number, to create all the folders you need
+
+## 2. Compile the ISSUE
+
+Run `rake ISSUE=n`, where `n` is the issue number, to convert the issue into an .hpub
